@@ -59,14 +59,16 @@ public class Runner implements CommandLineRunner {
 //            prs.save(pr);
             Prenotazione pr=prs.findById(1);
 
-            ps.searchByTipoAndCitta(TipoPostazione.PRIVATO,"Marsala").forEach(el->logger.info(el.toString()));
+//            ps.findByCitta("Marsala").forEach(el->logger.info(el.toString()));
+//            ps.searchByTipoAndCitta(TipoPostazione.PRIVATO,"Marsala").forEach(el->logger.info(el.toString()));
+//            ps.findByTipoPostazione(TipoPostazione.PRIVATO).forEach(el->logger.info(el.toString()));
+//            ps.findByEdificio(e).forEach(el->logger.info(el.toString()));
+//            ps.findByOverNumMax(10).forEach(el->logger.info(el.toString()));
+
 //            System.out.println(prs.checkIfLocationFree(LocalDate.now(),p));
 
         } catch (Exception e){
             logger.error(e.getMessage());
         }
-
-
-
     }
 }

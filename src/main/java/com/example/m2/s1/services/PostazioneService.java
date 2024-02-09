@@ -1,5 +1,6 @@
 package com.example.m2.s1.services;
 
+import com.example.m2.s1.entities.Edificio;
 import com.example.m2.s1.entities.Postazione;
 import com.example.m2.s1.enums.TipoPostazione;
 import com.example.m2.s1.repositories.PostazioneRepository;
@@ -27,5 +28,17 @@ public class PostazioneService {
     }
     public List<Postazione> searchByTipoAndCitta(TipoPostazione tipoPostazione,String citta){
         return pr.searchByTipoAndCitta(tipoPostazione,citta);
+    }
+    public List<Postazione> findByCitta(String citta){
+        return pr.findByCitta(citta);
+    }
+    public List<Postazione> findByTipoPostazione(TipoPostazione tipoPostazione){
+        return pr.findByTipoPostazione(tipoPostazione);
+    }
+    public List<Postazione> findByEdificio(Edificio edificio){
+        return pr.findByEdificio(edificio);
+    }
+    public List<Postazione> findByOverNumMax(int numMax){
+        return pr.findByOverNumMax(numMax);
     }
 }
