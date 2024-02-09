@@ -36,9 +36,9 @@ public class PrenotazioneService {
         pr.delete(p);
     }
     public boolean checkIfLocationFree(LocalDate data, Postazione postazione){
-        return pr.searchByDataAndPostazione(data,postazione).isEmpty();
+        return pr.searchByDataAndPostazione(data,postazione)==null;
     }
     public boolean checkIfUserFree(LocalDate data, Utente utente){
-        return pr.searchByDataAndUtente(data, utente).isEmpty();
+        return pr.searchByDataAndUtente(data, utente)==null;
     }
 }

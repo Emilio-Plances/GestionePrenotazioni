@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public interface PrenotazioneRepository extends JpaRepository<Prenotazione,Integer> {
     @Query("SELECT p FROM Prenotazione p WHERE p.postazione=:postazione AND p.dataPrenotazione=:data")
-    List<Prenotazione> searchByDataAndPostazione(LocalDate data, Postazione postazione);
+    Prenotazione searchByDataAndPostazione(LocalDate data, Postazione postazione);
     @Query("SELECT p FROM Prenotazione p WHERE p.utente=:utente AND p.dataPrenotazione=:data")
-    List<Prenotazione> searchByDataAndUtente(LocalDate data, Utente utente);
+    Prenotazione searchByDataAndUtente(LocalDate data, Utente utente);
 }

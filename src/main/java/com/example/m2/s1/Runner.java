@@ -16,6 +16,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
+
 @Component
 public class Runner implements CommandLineRunner {
     private static final Logger logger= LoggerFactory.getLogger("GestionePrenotazioni");
@@ -52,12 +54,13 @@ public class Runner implements CommandLineRunner {
             Postazione p=ps.findById(2);
 
             //Creazione Prenotazione
-//            Prenotazione pr=ctx.getBean("prenotazioneVuota", Prenotazione.class);
-//            pr.setPostazione(p);
-//            pr.setNumeroPartecipanti(10);
-//            pr.setUtente(u);
-//            prs.save(pr);
-            Prenotazione pr=prs.findById(1);
+            Prenotazione pr=ctx.getBean("prenotazioneVuota", Prenotazione.class);
+            pr.setPostazione(p);
+            pr.setNumeroPartecipanti(10);
+            pr.setDataPrenotazione(LocalDate.now().plusDays(1));
+            pr.setUtente(u);
+            prs.save(pr);
+//            Prenotazione pr=prs.findById(1);
 
 //            ps.findByCitta("Marsala").forEach(el->logger.info(el.toString()));
 //            ps.searchByTipoAndCitta(TipoPostazione.PRIVATO,"Marsala").forEach(el->logger.info(el.toString()));
