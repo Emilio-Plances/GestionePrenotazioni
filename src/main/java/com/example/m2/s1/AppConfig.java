@@ -5,8 +5,6 @@ import com.example.m2.s1.entities.Postazione;
 import com.example.m2.s1.entities.Prenotazione;
 import com.example.m2.s1.entities.Utente;
 import com.example.m2.s1.enums.TipoPostazione;
-import com.example.m2.s1.exceptions.ExceedMembersException;
-import com.example.m2.s1.exceptions.NoPostazioneAssociatedException;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;

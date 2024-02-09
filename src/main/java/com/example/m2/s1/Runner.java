@@ -5,7 +5,6 @@ import com.example.m2.s1.entities.Postazione;
 import com.example.m2.s1.entities.Prenotazione;
 import com.example.m2.s1.entities.Utente;
 import com.example.m2.s1.enums.TipoPostazione;
-import com.example.m2.s1.exceptions.ExceedMembersException;
 import com.example.m2.s1.services.EdificioService;
 import com.example.m2.s1.services.PostazioneService;
 import com.example.m2.s1.services.PrenotazioneService;
@@ -16,10 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Component;
-
-import java.time.LocalDate;
-import java.util.NoSuchElementException;
-
 
 @Component
 public class Runner implements CommandLineRunner {

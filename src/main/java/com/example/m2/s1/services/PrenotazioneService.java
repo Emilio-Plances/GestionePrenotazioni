@@ -6,11 +6,9 @@ import com.example.m2.s1.entities.Utente;
 import com.example.m2.s1.exceptions.*;
 import com.example.m2.s1.repositories.PrenotazioneRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service

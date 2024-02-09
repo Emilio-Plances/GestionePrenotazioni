@@ -1,6 +1,5 @@
 package com.example.m2.s1.services;
 
-import com.example.m2.s1.entities.Edificio;
 import com.example.m2.s1.entities.Postazione;
 import com.example.m2.s1.enums.TipoPostazione;
 import com.example.m2.s1.repositories.PostazioneRepository;

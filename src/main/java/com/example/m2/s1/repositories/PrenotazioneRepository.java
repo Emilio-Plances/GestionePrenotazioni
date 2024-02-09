@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
+
 @Repository
 public interface PrenotazioneRepository extends JpaRepository<Prenotazione,Integer> {
     @Query("SELECT p FROM Prenotazione p WHERE p.postazione=:postazione AND p.dataPrenotazione=:data")

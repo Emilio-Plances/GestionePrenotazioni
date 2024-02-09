@@ -1,6 +1,5 @@
 package com.example.m2.s1.services;
 
-import com.example.m2.s1.entities.Edificio;
 import com.example.m2.s1.entities.Utente;
 import com.example.m2.s1.repositories.UtenteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
